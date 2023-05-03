@@ -1,8 +1,14 @@
 import React from "react";
+import Header from "./components/header";
+import './css/index.scss';
+import Landing from "./components/landing";
 
 function App(){
     return(
-        <h1>hello</h1>
+        <>
+        <Header />
+        <Landing />
+        </>
     )
 }
 
