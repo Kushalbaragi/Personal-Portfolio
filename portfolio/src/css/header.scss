@@ -1,0 +1,55 @@
+@import "./variable.scss";
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: $secondary-color;
+}
+body {
+  background-color: $primary-color;
+}
+.header-container {
+  position: relative;
+  background-color: $secondary-color;
+  color: $black-coolor;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 28%;
+      height: 2px;
+      background-color: $black-coolor;
+      display: block;
+      position: absolute;
+    }
+    &::before {
+      top: 50%;
+      left: 0;
+    }
+    &::after {
+      top: 50%;
+      right: 0;
+    }
+
+    li {
+      color: $black-coolor;
+      margin: 20px 0;
+      cursor: pointer;
+      &:hover {
+        color: $primary-color;
+      }
+
+      &.active {
+        outline: 3px solid $accent-color;
+      }
+    }
+  }
+}
