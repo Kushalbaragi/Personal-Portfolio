@@ -1,0 +1,63 @@
+@import "./variable.scss";
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: $primary-color;
+  margin-top: 64px;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media screen and (min-width: $desktop-medium) {
+    padding: 0 272px;
+  }
+  @media screen and (min-width: $desktop-large) {
+    max-width: 1920px;
+    padding: 0 200px;
+  }
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.sub-heading {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.body-text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 400;
+  // padding: 15px 60px;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  &.button-primary {
+    background: transparent;
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+  }
+  &.button-secondary {
+    background: $accent-color;
+    color: $black-coolor;
+    border: none;
+  }
+}
