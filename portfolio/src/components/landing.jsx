@@ -1,6 +1,6 @@
 import React from "react";
-import LandingIcons from "./landingIcons";
-import hand from "../assets/hand.png";
+import LandingIcons from "./common/landingIcons";
+import hand from '../assets/hand.png';
 function Landing() {
   return (
     <section className="container">
