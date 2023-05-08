@@ -1,7 +1,7 @@
 import React from "react";
-import youtube from '../assets/youtube 1.png';
-import linkedIn from '../assets/linkedin 1.png';
-import github from '../assets/github 1.png';
+import youtube from "/Users/kushalbaragi/Downloads/Personal-Portfolio/portfolio/src/assets/youtube 1.png";
+import linkedIn from "/Users/kushalbaragi/Downloads/Personal-Portfolio/portfolio/src/assets/linkedin 1.png";
+import github from "/Users/kushalbaragi/Downloads/Personal-Portfolio/portfolio/src/assets/github 1.png";
 
 function LandingIcons(){
     return(

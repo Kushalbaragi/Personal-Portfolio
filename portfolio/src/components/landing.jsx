@@ -1,6 +1,6 @@
 import React from "react";
-import LandingIcons from "./landingIcons";
-import hand from "../assets/hand.png";
+import LandingIcons from "./common/landingIcons";
+import hand from '../assets/hand.png';
 function Landing() {
   return (
     <section className="container">
@@ -8,7 +8,7 @@ function Landing() {
         <div className="landing-subContainer">
           <div className="left-container">
             <div className="subName sub-heading">
-              Hey <img src={hand} alt="hand"></img>i'm
+              Hey <img src={hand} alt="hand waving"></img>i'm
             </div>
             <h1 className="name">KUSHAL BARAGI</h1>
             <p className="desc body-text">
