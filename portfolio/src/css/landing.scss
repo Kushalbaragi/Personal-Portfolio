@@ -57,29 +57,7 @@
     }
   }
   .button-secondary {
-    position: relative;
-    &::after {
-      content: "";
-      background: url("../assets/download.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 20px;
-      height: 20px;
-      display: block;
-      position: absolute;
-      top: 8px;
-      right: 38px;
-      opacity: 0;
-      transition: 0.2s ease-in-out;
-    }
-    &:hover {
-      background-color: $secondary-color;
-      &::after {
-        top: 15px;
-
-        opacity: 0.8;
-      }
-    }
+   
   }
 }
 .right-container {
