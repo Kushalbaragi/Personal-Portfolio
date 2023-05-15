@@ -1,9 +1,17 @@
+@import 'variable.scss';
+
 .landing-container {
+  background: radial-gradient(circle, #374756 0%, #1F2830 70%);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
+  // background: url('../assets/white1.jpeg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-attachment: fixed;
+
 }
 .landing-subContainer {
   display: flex;
@@ -54,30 +62,9 @@
       }
     }
   }
-  .button-secondary {
-    position: relative;
-    &::after {
-      content: "";
-      background: url("../assets/download.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 20px;
-      height: 20px;
-      display: block;
-      position: absolute;
-      top: 8px;
-      right: 38px;
-      opacity: 0;
-      transition: 0.2s ease-in-out;
-    }
-    &:hover {
-      background-color: $secondary-color;
-      &::after {
-        top: 15px;
-
-        opacity: 0.8;
-      }
-    }
+  .button {
+    margin-right: 30px;
+   
   }
 }
 .right-container {

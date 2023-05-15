@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/header.scss";
+
 
 function Header(){
     function headerClick(props){
