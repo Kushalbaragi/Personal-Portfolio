@@ -1,9 +1,14 @@
+header{
+  position: sticky;
+  top: 0; 
+  color: #ffffff;
 
+}
 .header-container {
-  position: fixed;
-  top: 0;
-  background-color: $secondary-color;
-  color: $black-coolor;
+
+  right: 0;
+  background: $primary-color;
+  color: #ffffff;
   width: 100%;
   ul {
     display: flex;
@@ -16,7 +21,7 @@
       content: "";
       width: 28%;
       height: 2px;
-      background-color: $black-coolor;
+      background-color: #ffffff; 
       display: block;
       position: absolute;
     }
@@ -30,7 +35,7 @@
     }
 
     li {
-      color: $black-coolor;
+      color: #ffffff;
       margin: 20px 0;
       cursor: pointer;
       &:hover {
@@ -43,3 +48,4 @@
     }
   }
 }
+ 

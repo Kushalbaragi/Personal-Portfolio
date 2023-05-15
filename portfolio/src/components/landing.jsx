@@ -1,10 +1,11 @@
 import React from "react";
 import LandingIcons from "./common/landingIcons";
 import hand from '../assets/hand.png';
+import resume from '../assets/resume.pdf';
 function Landing() {
   return (
-    <section className="container">
-      <div className="landing-container">
+    <section className="landing-container">
+      <div className="container">
         <div className="landing-subContainer">
           <div className="left-container">
             <div className="subName sub-heading">
@@ -16,7 +17,7 @@ function Landing() {
               India
             </p>
             <button className="button button-primary">Hire Me</button>
-            <button className="button button-secondary">Resume</button>
+            <a href={resume} download='kushal resume'><button className="button button-secondary">Resume</button></a>
             <LandingIcons />
           </div>
           <div className="right-container">

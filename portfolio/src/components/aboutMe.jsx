@@ -8,7 +8,7 @@ function AboutMe() {
     <div className="container">
       <div className="aboutMe-wrapper">
         <Title title="About Me" />
-        <div class="slider"></div>
+        <div className="slider"></div>
         <div className="img-wrapper">
           <img src={preffesional} alt="preffesional"></img>
         </div>
@@ -21,13 +21,13 @@ function AboutMe() {
 
         <SubTitle subTitle='Tech Stacks'/>
         <div className="stack-wrapper">
-            <ul class='stack-1'>
+            <ul className='stack-1'>
                 <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
-            <ul class='stack-2'>
+            <ul className='stack-2'>
                 <li></li>
                 <li></li>
                 <li></li>

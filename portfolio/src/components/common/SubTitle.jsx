@@ -2,7 +2,7 @@ import React from 'react'
 
 function SubTitle({subTitle}) {
   return (
-    <div class='subTitle'>{subTitle}</div>
+    <div className='subTitle'>{subTitle}</div>
   )
 }
 

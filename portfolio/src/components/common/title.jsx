@@ -1,8 +1,9 @@
 import React from 'react'
 
 function Title(props) {
+
   return (
-    <h2 class='sub-heading'>{props.title}</h2>
+    <h2 className='sub-heading'>{props.title}</h2>
   )
 }
 
