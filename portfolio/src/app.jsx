@@ -1,25 +1,23 @@
 import React from "react";
-import Header from './components/common/header';
-import '../src/css/index.scss';
+import Header from "./components/common/header";
+import "../src/css/index.scss";
 import Landing from "./components/landing";
 import AboutMe from "./components/aboutMe";
+import Projects from "./components/projects";
+import Experience from "./components/experience";
+import Contact from "./components/contact";
 
-function App(){
-    return(
-        <>
-        <Header />
-        <Landing />
-        <hr/>
-
-        <AboutMe/>
-        <hr/>
-
-        <AboutMe/>
-        <hr/>
-
-
-        </>
-    )
+function App() {
+  return (
+    <>
+      <Header />
+      <Landing />
+      <AboutMe />
+      <Projects/>
+      <Experience/>
+      <Contact/>
+    </>
+  );
 }
 
 export default App;
