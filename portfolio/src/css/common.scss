@@ -6,14 +6,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  color: $secondary-color;
+  color: $white-color;
+  background: $black-coolor;
 }
-
-body {
-  background: $primary-color;
-
-}
-
 .container {  
   max-width: 100%;
   padding: 0 20px;
@@ -65,8 +60,8 @@ h2{
   transition: 0.15s ease-in-out;
   &.button-primary {
     background: transparent;
-    color: $secondary-color;
-    border: 1px solid $secondary-color;
+    color: $white-color;
+    border: 1px solid $white-color;
     position: relative;
     &::after {
       content: "";
@@ -94,7 +89,7 @@ h2{
     }
   }
   &.button-secondary {
-    background: $secondary-color;
+    background: $white-color;
     color: $black-coolor;
     border: none;
     position: relative;
