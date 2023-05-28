@@ -20,7 +20,7 @@ body {
   }
   @media screen and (min-width: $desktop-large) {
     max-width: 1920px;
-    padding: 0 200px;
+    padding: 0 120px;
   }
 }
 
@@ -114,4 +114,13 @@ a {
     font-size: 14px;
     margin-bottom: 21px;
   }
+}
+
+.disclaimer{
+  @media screen and (max-width: $desktop-medium) {
+      font-size: 10px;
+    }
+  font-size: 20px;
+  margin: 21px 0;
+
 }

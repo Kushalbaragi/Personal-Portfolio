@@ -34,6 +34,9 @@
     font-size: 28px;
     font-weight: 600;
     border-bottom: 3px solid $accent-color;
+    @media screen and (max-width: $desktop-medium) {
+    font-size: 18px;
+    }
    
     // &::after{
     // //   background: url('../assets//arrow-right.png');
