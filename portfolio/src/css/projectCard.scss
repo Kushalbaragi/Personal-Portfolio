@@ -1,0 +1,102 @@
+@import "./variable.scss";
+
+.projectCard-wrapper {
+  @media screen and (max-width: $desktop-medium) {
+    padding: 30px 15px;
+    flex-direction: column;
+    gap: 10px;
+    margin: 40px 0;
+  }
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  border-radius: 20px;
+  position: relative;
+  z-index: -1;
+  background-color: $white-color;
+  margin: 60px 0;
+
+  .left-wrapper {
+    @media screen and (max-width: $desktop-medium) {
+      width: 100%;
+    }
+    width: 50%;
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+  .right-wrapper {
+    @media screen and (max-width: $desktop-medium) {
+      width: 100%;
+    }
+    width: 50%;
+    .card-title {
+      @media screen and (max-width: $desktop-medium) {
+        font-size: 20px;
+       margin-bottom: 15px;
+
+      }
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 21px;
+    }
+    .built-wrapper {
+      display: flex;
+      align-items: center;
+
+      gap: 20px;
+      margin-bottom: 30px;
+      p {
+        font-weight: 600;
+        margin-right: 15px;
+        margin-bottom: 0;
+      }
+      ul {
+        display: flex;
+        gap: 20px;
+
+        li {
+          @media screen and (max-width: $desktop-medium) {
+            width: 30px;
+            height: 30px;
+          }
+          background-color: $black-color;
+          border-radius: 100%;
+          width: 40px;
+          height: 40px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .bottom-wrapper {
+      div {
+        display: inline-block;
+        span {
+          @media screen and (max-width: $desktop-medium) {
+            font-size: 18px;
+          }
+          font-size: 24px;
+          font-weight: 500;
+        }
+        img {
+          vertical-align: middle;
+          margin-bottom: 5px;
+          margin-left: 15px;
+          @media screen and (max-width: $desktop-medium) {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+      .second {
+        @media screen and (max-width: $desktop-medium) {
+          margin-right: 20px;
+        }
+        margin-right: 40px;
+      }
+    }
+  }
+}
