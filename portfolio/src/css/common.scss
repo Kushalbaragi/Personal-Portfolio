@@ -52,6 +52,13 @@ h2 {
 }
 li {
   list-style: none;
+  font-size: 14px;
+  margin-bottom: 21px;
+  @media screen and (min-width: $desktop-medium) {
+    font-size: 24px;
+  margin-bottom: 40px;
+
+  }
 }
 a {
   text-decoration: none;
@@ -89,6 +96,11 @@ a {
   }
 }
 
+
+.red {
+  color: $red-color;
+  display: inline;
+}
 @media screen and (max-width: $desktop-medium) {
   h1 {
     font-size: 40px;
