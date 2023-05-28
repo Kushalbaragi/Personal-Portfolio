@@ -1,0 +1,97 @@
+@import "./variable.scss";
+
+.form-wrapper {
+  height: 100vh;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: $desktop-medium) {
+    padding: 0 120px;
+    flex-direction: row;
+  }
+
+.left-wrapper {
+  width: 100%;
+  // background-color: red;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: $desktop-medium) {
+    width: 50%;
+    height: 100%;
+  }
+
+  p {
+    font-size: 16px;
+    @media screen and (min-width: $desktop-medium) {
+      font-size: 30px;
+    }
+    a {
+      font-weight: 500;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        bottom: -3px;
+        right: 0;
+        background-color: $accent-color;
+      }
+    }
+  }
+}
+.right-wrapper {
+  width: 100%;
+  background-color: $white-color;
+  border-radius: 30px;
+  padding:30px 20px;
+  @media screen and (min-width: $desktop-medium) {
+    width: 50%;
+  padding:60px 120px;
+
+  }
+  h2{
+     color: $black-color;
+     text-align: center;
+  }
+  form{
+    width: 100%;
+
+  label{
+   font-size: 14px;
+   color: $black-color;
+   margin: 21px 0 0 5px;
+  }
+  input{
+    display: block;
+    background-color: transparent;
+    color: $white-color;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid $black-color;
+    width: 100%;
+    &::placeholder{
+        color: $black-color;
+        opacity: 0.6;
+        font-weight: 600;
+    }
+  }
+}
+.btn-wrapper{
+    width: 100%;
+    text-align: center;
+  button{
+    background-color: $accent-color;
+    color: $black-color;
+    margin-top: 60px;
+  }
+}
+}
+}
+

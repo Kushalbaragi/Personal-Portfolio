@@ -1,4 +1,4 @@
-@import 'variable.scss';
+@import "variable.scss";
 
 .landing-container {
   display: flex;
@@ -6,93 +6,78 @@
   align-items: center;
   width: 100%;
   height: 100vh;
-}
-.landing-subContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-direction: row;
-  @media screen and (max-width: $desktop-medium) {
-    flex-direction: column-reverse;
-  }
-}
-.left-container {
-  width: 60%;
-  color: $secondary-color;
-  @media screen and (max-width: $desktop-medium) {
-    flex-direction: column-reverse;
-    width: unset;
-  }
-  .subName {
-    img {
-      margin: 0 15px 0 5px;
-      vertical-align: middle;
+  .landing-subContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    @media screen and (max-width: $desktop-medium) {
+      flex-direction: column-reverse;
     }
   }
+  .left-container {
+    width: 60%;
+    color: $white-color;
+    @media screen and (max-width: $desktop-medium) {
+      flex-direction: column-reverse;
+      width: unset;
+    }
+    .subName {
+      font-size: 32px;
+      font-weight: 500px;
+      img {
+        margin: 0 15px 0 5px;
+        vertical-align: middle;
+      }
+    }
 
-  .name {
-    margin-bottom: 12px;
-  }
-  .desc {
-    margin-bottom: 40px;
-  }
-  .landing-icon-container {
-    ul {
+    .name {
+      margin-bottom: 21px;
+    }
+    .desc {
+      margin-bottom: 21px;
+
+      &::after {
+        @include afterMixin();
+      }
+    }
+    .icon-wrapper {
+      margin-top: 40px;
       display: flex;
-      margin-top: 30px;
       justify-content: flex-start;
       align-items: center;
-      height: fit-content;
-      li {
-        margin-right: 65px;
+      gap: 50px;
+      @media screen and (max-width: $desktop-medium) {
+      margin-top: 21px;
       }
       img {
         cursor: pointer;
         transition: 0.2s ease-in-out;
         &:hover {
-          transform: scale(1.2);
+          transform: scale(1.1);
         }
       }
     }
+    .button {
+      margin-right: 50px;
+      margin-bottom: 15px;
+      @media screen and (max-width: $desktop-medium) {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+    }
   }
-  .button-secondary {
-    position: relative;
-    &::after {
-      content: "";
-      background: url("../assets/download.svg");
+  .right-container {
+    .circle {
+      background: url("../assets/coder.png");
       background-repeat: no-repeat;
       background-size: cover;
-      width: 20px;
-      height: 20px;
-      display: block;
-      position: absolute;
-      top: 8px;
-      right: 38px;
-      opacity: 0;
-      transition: 0.2s ease-in-out;
-    }
-    &:hover {
-      background-color: $secondary-color;
-      &::after {
-        top: 15px;
-
-        opacity: 0.8;
+      width: 190px;
+      height: 190px;
+      @media screen and (min-width: $desktop-small) {
+        width: 300px;
+        height: 300px;
       }
     }
   }
 }
-.right-container {
-  .circle {
-    background-color: $secondary-color;
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    transition: 0.2s ease-in-out;
-
-    &:hover {
-      box-shadow: 0px 0 30px $secondary-color;
-    }
-  }
-}
-

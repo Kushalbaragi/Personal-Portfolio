@@ -1,10 +1,16 @@
+@import './variable.scss';
 
-.header-container {
-  position: fixed;
+header{
+  position: sticky;
   top: 0;
-  background-color: $secondary-color;
-  color: $black-coolor;
-  width: 100%;
+  z-index: 1;
+  display: none;
+  @media screen and (min-width:$desktop-medium){
+    display: block;
+    background-color: $primary-color;
+  }
+}
+.header-container {
   ul {
     display: flex;
     justify-content: center;
@@ -16,7 +22,7 @@
       content: "";
       width: 28%;
       height: 2px;
-      background-color: $black-coolor;
+      background-color: $black-color; 
       display: block;
       position: absolute;
     }
@@ -30,11 +36,9 @@
     }
 
     li {
-      color: $black-coolor;
       margin: 20px 0;
       cursor: pointer;
       &:hover {
-        color: $primary-color;
       }
 
       &.active {
@@ -43,3 +47,4 @@
     }
   }
 }
+ 
