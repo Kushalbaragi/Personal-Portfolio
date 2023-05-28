@@ -12,7 +12,6 @@
     padding: 0 120px;
     flex-direction: row;
   }
-}
 
 .left-wrapper {
   width: 100%;
@@ -58,7 +57,7 @@
 
   }
   h2{
-     color: $black-coolor;
+     color: $black-color;
      text-align: center;
   }
   form{
@@ -66,19 +65,19 @@
 
   label{
    font-size: 14px;
-   color: $black-coolor;
+   color: $black-color;
    margin: 21px 0 0 5px;
   }
   input{
     display: block;
     background-color: transparent;
-    color: white;
+    color: $white-color;
     padding: 5px;
     border: none;
-    border-bottom: 1px solid $black-coolor;
+    border-bottom: 1px solid $black-color;
     width: 100%;
     &::placeholder{
-        color: $black-coolor;
+        color: $black-color;
         opacity: 0.6;
         font-weight: 600;
     }
@@ -89,8 +88,10 @@
     text-align: center;
   button{
     background-color: $accent-color;
-    color: $black-coolor;
+    color: $black-color;
     margin-top: 60px;
   }
 }
 }
+}
+
